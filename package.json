@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "ws -p 8080"
+  },
+  "dependencies": {
+    "local-web-server": "^4.2.1"
+  }
+}

@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    overflow: auto;
+    font-family: "Be Vietnam", sans-serif;
+}
+#loading {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #9e1b21;
+    color: #e9a938;
+    text-shadow: 0 5px 5px #0003;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s, visibility 1s;
+}
+#loading.stop {
+    opacity: 0;
+    visibility: hidden;
+}
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+#canvas {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 0.5s;
+    opacity: 1;
+    visibility: visible;
+}
