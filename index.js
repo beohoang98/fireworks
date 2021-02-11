@@ -1,3 +1,5 @@
+const BASE_URL = "/fireworks";
+
 document.addEventListener("DOMContentLoaded", stopLoading(main));
 /** @type {HTMLAudioElement} */
 let audio;
@@ -10,8 +12,8 @@ function waitFake() {
 
 function loadAudio() {
     return new Promise((res) => {
-        audio = new Audio("/firework_distant_explosion.mp3");
-        audio.preload = "true"
+        audio = new Audio(BASE_URL + "/firework_distant_explosion.mp3");
+        audio.preload = "true";
         audio.addEventListener("canplaythrough", res);
     });
 }
